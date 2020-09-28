@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-    res.send(knex.users);
+    res.send('it is working');
 })
 
 app.post('/signin', signin.handleSignin(knex, bcrypt));
